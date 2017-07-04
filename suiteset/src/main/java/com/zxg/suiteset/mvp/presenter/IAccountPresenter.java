@@ -7,4 +7,5 @@ import com.zxg.suiteset.mvp.contract.IAccountContract;
  */
 
 public class IAccountPresenter implements IAccountContract.Presenter {
+
 }

@@ -33,7 +33,6 @@ public abstract class BaseFragment extends Fragment {
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
         onInitView();
         onInitData();
-
         return rootView;
     }
     /**

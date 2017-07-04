@@ -7,10 +7,12 @@ import com.zxg.mzitu.contract.IParseDataContract;
  */
 
 public class IParseDataPresenter implements IParseDataContract.Presenter {
+
     private IParseDataContract.View view;
     @Override
     public void onViewAttached(IParseDataContract.View view) {
         this.view = view;
+        this.view.setPresenter(this);
     }
 
     @Override
@@ -25,6 +27,11 @@ public class IParseDataPresenter implements IParseDataContract.Presenter {
 
     @Override
     public void start() {
+
+    }
+
+    @Override
+    public void parseHtml(String url) {
 
     }
 }

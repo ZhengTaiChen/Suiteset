@@ -1,1 +1,1 @@
-include ':app', ':suiteset'
+include ':app', ':suiteset', ':arms'
